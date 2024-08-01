@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="caminho/para/sua/imagem.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="Calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="limpar()"> C </button>
+            <button onclick="cancelarEntrada()"> CE </button>
+            <button onclick="exibir('%')"> % </button>
+            <button onclick="exibir('/')" class="operacao-btn"> ÷ </button>
+            
+
+            <button onclick="exibir('7')"> 7 </button>
+            <button onclick="exibir('8')"> 8 </button>
+            <button onclick="exibir('9')"> 9 </button>
+            <button onclick="exibir('*')" class="operacao-btn">×</button>
+
+            <button onclick="exibir('4')"> 4</button>
+            <button onclick="exibir('5')"> 5 </button>
+            <button onclick="exibir('6')"> 6 </button>
+            <button onclick="exibir('-')" class="operacao-btn"> - </button>
+            <button onclick="exibir('1')"> 1 </button>
+            <button onclick="exibir('2')"> 2 </button>
+            <button onclick="exibir('3')"> 3 </button>
+            <button onclick="exibir('+')" class="operacao-btn"> + </button>
+
+            <button onclick="exibir('0')" class="botao-zero"> 0 </button>
+            <button onclick="exibir('.')"> . </button>
+            <button onclick="calcular()" class="operacao-btn" > = </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
